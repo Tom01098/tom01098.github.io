@@ -1,0 +1,12 @@
+title: Tom Humphreys
+email: Tom01098Code@gmail.com
+description: >-
+  Incoherent rants about my view of tech things like the cloud, application design, and standards.
+baseurl: ""
+url: "https://tom01098.github.io"
+twitter_username: Tom01098
+github_username: Tom01098
+
+theme: minima
+plugins:
+  - jekyll-feed
