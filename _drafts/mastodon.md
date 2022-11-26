@@ -1,0 +1,28 @@
+---
+layout: post
+title: Linking GitHub pages with Mastodon (the very easy way)
+---
+
+I recently decided to try out [Mastodon](https://joinmastodon.org/) and I'm really enjoying the experience so far! Mastodon offers a feature to add 'Profile Metadata' (nerdy way of saying 'links'). These links can be verified and show up with a tick next to them, which looks very official! But the platform is decentralised... who 'verifies' these links?
+
+The trick is that the link must respond in some way that says "I'm owned by *this* Mastodon user". We can do that with a `rel-me` link, which I found out is known as a [Microformat](https://microformats.org/wiki/what-are-microformats)!
+
+The link to my Mastodon profile on [fosstodon](https://fosstodon.org/) looks like this:
+
+```html
+<a rel="me" href="https://fosstodon.org/@Tom01098"/>
+```
+
+Of course, you must replace the `href` tag with your own!
+
+The server must respond with this link on its root (that is, `/`). Although this probably isn't the right way to do it (I have no idea what I'm doing on the frontend!), I found it works fine if plonked in Jekyll's `index.markdown` file. Using the `minima` theme, my `index.markdown` now looks like this:
+
+```html
+---
+layout: home
+---
+
+<a rel="me" href="https://fosstodon.org/@Tom01098"/>
+```
+
+That's literally it. Deploy to your GitHub pages site and it should Just Work! If you use any other blogging platform, it should just be as simple as adding the link to your root page. Good luck!
