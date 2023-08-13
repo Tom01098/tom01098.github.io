@@ -1,13 +1,16 @@
 {
     "cSpell.language": "en-GB",
     "cSpell.words": [
-        "fosstodon",
         "backoff",
+        "Crickett's",
+        "fosstodon",
         "introspecting",
         "metaprogramming",
         "microservices",
         "mypy",
+        "openapi",
         "retriable",
-        "Rossum"
+        "Rossum",
+        "Shortener"
     ]
 }
