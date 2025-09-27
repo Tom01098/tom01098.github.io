@@ -1,5 +1,6 @@
 baseURL = "https://tom01098.github.io/"
 title = "Tom Humphreys"
+description = "Tom Humphreys' personal website"
 theme = "hugo-coder"
 languageCode = "en-gb"
 defaultcontentlanguage = "en-gb"
