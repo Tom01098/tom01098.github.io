@@ -1,0 +1,27 @@
+baseURL = "https://tom01098.github.io/"
+title = "Tom Humphreys"
+theme = "hugo-coder"
+languageCode = "en-gb"
+defaultcontentlanguage = "en-gb"
+
+[params]
+author = "Tom Humphreys"
+info = "Passionate software developer with a keen focus on maintainability and distributed systems"
+
+keywords = "blog,developer,personal"
+since = 2025
+
+avatarURL = "images/Headshot.jpg"
+colorScheme = "auto"
+
+[[params.social]]
+name = "Github"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/Tom01098/"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa-brands fa-linkedin fa-2x"
+weight = 1
+url = "https://www.linkedin.com/in/tom-humphreys-code/"
