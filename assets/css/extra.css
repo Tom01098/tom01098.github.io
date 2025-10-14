@@ -1,0 +1,17 @@
+.tip,
+.warning {
+    border-radius: 0.2rem;
+    > p {
+        padding: 0.5rem 1rem;
+    }
+}
+
+.warning {
+    border-left-color: #ffbb00 !important;
+    background-color: #ffbb001a;
+}
+
+.tip {
+    border-left-color: #007900 !important;
+    background-color: #0079001a;
+}

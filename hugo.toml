@@ -15,6 +15,16 @@ since = 2025
 avatarURL = "images/Headshot.jpg"
 colorScheme = "auto"
 
+customCSS = ["css/extra.css"]
+
+[markup.goldmark.parser.attribute]
+block = true
+
+# For rendering HTML (e.g., details).
+# Safe because we don't render user-generated content.
+[markup.goldmark.renderer]
+unsafe = true
+
 [[params.social]]
 name = "Github"
 icon = "fa-brands fa-github fa-2x"
@@ -26,3 +36,8 @@ name = "LinkedIn"
 icon = "fa-brands fa-linkedin fa-2x"
 weight = 1
 url = "https://www.linkedin.com/in/tom-humphreys-code/"
+
+[[menu.main]]
+name = "Blog"
+weight = 1
+url = "posts/"
