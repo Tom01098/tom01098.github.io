@@ -26,3 +26,8 @@ name = "LinkedIn"
 icon = "fa-brands fa-linkedin fa-2x"
 weight = 1
 url = "https://www.linkedin.com/in/tom-humphreys-code/"
+
+[[menu.main]]
+name = "Blog"
+weight = 1
+url = "posts/"
