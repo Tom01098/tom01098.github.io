@@ -1,0 +1,8 @@
+services:
+  server:
+    image: ghcr.io/gohugoio/hugo:v0.154.0
+    command: server -D --bind 0.0.0.0
+    volumes:
+      - .:/project
+    ports:
+      - "1313:1313"
