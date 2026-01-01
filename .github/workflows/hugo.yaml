@@ -22,19 +22,21 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.154.0
     steps:
       - name: Checkout
         uses: actions/checkout@v5
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Load Environment Variables
+        id: dotenv
+        uses: falti/dotenv-action@v1.1.5
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
       - name: Install Hugo
         run: |
+          export HUGO_VERSION=${{ steps.dotenv.outputs.HUGO_VERSION }}
           curl -sLJO "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
           mkdir -p "${HOME}/.local/hugo"
           tar -C "${HOME}/.local/hugo" -xf "hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"

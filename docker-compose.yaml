@@ -1,6 +1,6 @@
 services:
   server:
-    image: ghcr.io/gohugoio/hugo:v0.154.0
+    image: ghcr.io/gohugoio/hugo:v${HUGO_VERSION}
     command: server -D --bind 0.0.0.0
     volumes:
       - .:/project
