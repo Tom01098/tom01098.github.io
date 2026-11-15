@@ -34,6 +34,8 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Install Sass
+        run: sudo snap install dart-sass
       - name: Install Hugo
         run: |
           export HUGO_VERSION=${{ steps.dotenv.outputs.HUGO_VERSION }}
